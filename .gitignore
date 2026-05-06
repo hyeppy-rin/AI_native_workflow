@@ -1,0 +1,7 @@
+.DS_Store
+03_output/*
+!03_output/.gitkeep
+z_logs/*
+!z_logs/.gitkeep
+node_modules/
+.env
