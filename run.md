@@ -8,6 +8,7 @@
 ## INPUT 정의
 - 01_input/rfp.md: Task 01의 NotebookLM 소스용 (전체 합본)
 - 01_input/ 하위 나머지 .md 파일들: rfp.md를 제외한 모든 파일을 순서대로 읽어 분석 소스로 활용
+- 01_input/reference/: 참고 자료(PDF, 이미지, 매뉴얼 등) 보관. PDF는 NotebookLM MCP를 통해 브리핑 생성 후 활용
   (파일명·수량은 RFP마다 상이하므로 실행 시 동적으로 탐색)
 
 ---
@@ -22,8 +23,8 @@
 
 | 순서 | 폴더 | Input | Output | 도구 |
 |------|------|-------|--------|------|
-| 00 | `02_tasks/00_research` | 01_input/ (rfp.md 제외) | `00_research.json` + `00_research.md` | NotebookLM MCP (선택적) |
-| 01 | `02_tasks/01_rfp_structuring` | 01_input/rfp.md (NLM) + 1~3.md (Claude) | `01_nlm_briefing.md` + `01_rfp_structured.json` + `context.md` | NotebookLM MCP + Antigravity |
+| 00 | `02_tasks/00_research` | 01_input/ (rfp.md 제외) + reference/ | `00_research.json` + `00_research.md` | NotebookLM MCP (선택적) |
+| 01 | `02_tasks/01_rfp_structuring` | 01_input/rfp.md + reference/ (NLM) + 1~3.md (Claude) | `01_nlm_briefing.md` + `01_ref_briefing.md` + `01_rfp_structured.json` + `context.md` | NotebookLM MCP + Antigravity |
 | 02 | `02_tasks/02_stakeholder_analysis` | 01 output | `02_user_analysis.json` | Antigravity |
 | 03 | `02_tasks/03_feature_definition` | 01+02 output | `03_features.json` | Antigravity |
 | 04 | `02_tasks/04_service_scenario` | 02+03 output | `04_scenarios.json` | Antigravity |
@@ -57,6 +58,7 @@
 |------|----------|
 | JSON/MD 분석 및 생성 | Antigravity |
 | RFP 전체 브리핑 생성 (task 01 Phase 1) | NotebookLM MCP |
+| 참고 자료(PDF 등) 분석 및 브리핑 생성 | NotebookLM MCP |
 | 데스크리서치 (task 00) | NotebookLM MCP |
 | 와이어프레임 생성 (task 08) | Claude Code |
 | 코드 생성 필요 시 | Claude Code |

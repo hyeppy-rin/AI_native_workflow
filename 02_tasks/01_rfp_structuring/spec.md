@@ -10,9 +10,11 @@ Claude가 브리핑 + 원문 파일을 종합하여 JSON과 context.md를 생성
 - 01_input/1.추진방향_사업범위.md
 - 01_input/2.현황_및_당면과제.md
 - 01_input/3.상세요구사항_기능_인터페이스_컨설팅.md
+- 01_input/reference/ (참고 PDF, 매뉴얼 등 — NotebookLM 소스용)
 
 ## OUTPUT
-- 03_output/{run_id}/01_nlm_briefing.md (NotebookLM 브리핑 보고서)
+- 03_output/{run_id}/01_nlm_briefing.md (RFP 원문 브리핑 보고서)
+- 03_output/{run_id}/01_ref_briefing.md (참고 자료 브리핑 보고서 — 있을 경우 생성)
 - 03_output/{run_id}/01_rfp_structured.json
 - context.md (프로젝트 루트에 생성)
 
@@ -114,7 +116,8 @@ JSON + Markdown
 ---
 
 ## QUALITY RULES
-- NLM 브리핑은 전체 맥락 파악용이며, 세부 데이터(기능 요구사항 ID 등)는 원문에서 직접 추출한다
+- NLM 브리핑(RFP/참고)은 전체 맥락 파악용이며, 세부 데이터(기능 요구사항 ID 등)는 원문에서 직접 추출한다
+- 참고 자료(reference/)가 있을 경우, 해당 내용을 분석하여 비기능 요구사항이나 제약사항 탐색에 적극 활용한다
 - 원문에 없는 내용은 추가하지 않는다
 - non_functional_requirements와 constraints는 명시적 항목이 없어도 본문 맥락에서 적극 탐색한다
 - work_context는 02_stakeholder_analysis 페인포인트 도출의 핵심 근거가 되므로 최대한 구체적으로 작성한다

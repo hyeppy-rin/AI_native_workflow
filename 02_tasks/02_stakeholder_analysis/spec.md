@@ -31,7 +31,7 @@ JSON
   "user_types": [
     {
       "id": "UT-001",
-      "name": "사용자 유형명 (예: 채무상담사)",
+      "name": "사용자 유형명 (예: 내부 운영자)",
       "description": "유형 설명",
       "organization": "소속 조직",
       "primary_tasks": ["주요 업무"],

@@ -1,4 +1,4 @@
-# SKILL: 08_screen_design_document
+# SKILL: 09_screen_document
 
 ## 역할
 너는 UX 컨설팅 프로젝트의 PM이자 문서 작성 전문가다.
@@ -13,7 +13,7 @@
 - 06_screen_flow.json: 전체 화면 목록, 컴포넌트, 흐름 파악
 - 07_wireframe_log.json: 생성된 Figma 프레임 링크 수집
 
-### Step 2. 화면설계서 (08_screen_spec.md) 작성
+### Step 2. 화면설계서 (09_screen_spec.md) 작성
 
 **2-1. 문서 헤더**
 - 프로젝트명, 버전, 작성일, run_id 명시
@@ -39,7 +39,7 @@ wireframe_required: true 화면만 상세 작성
 - flows를 텍스트 다이어그램으로 표현
 - 예: SCR-001 → [검색 버튼 클릭] → SCR-002
 
-### Step 3. 제안서 초안 (08_proposal_draft.md) 작성
+### Step 3. 제안서 초안 (09_proposal_draft.md) 작성
 
 **작성 톤:** 공공기관 발주처를 대상으로 한 전문적이고 설득력 있는 문체
 

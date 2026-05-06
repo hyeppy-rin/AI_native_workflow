@@ -1,4 +1,4 @@
-# TASK SPEC: 08_screen_design_document
+# TASK SPEC: 09_screen_document
 
 ## 목적
 전체 파이프라인 산출물을 종합하여 화면설계서와 제안서 초안을 생성한다.
@@ -9,15 +9,15 @@
 - output/{run_id}/07_wireframe_log.json
 
 ## OUTPUT
-- output/{run_id}/08_screen_spec.md (화면설계서 - PPT 변환용)
-- output/{run_id}/08_proposal_draft.md (제안서 초안)
+- output/{run_id}/09_screen_spec.md (화면설계서 - PPT 변환용)
+- output/{run_id}/09_proposal_draft.md (제안서 초안)
 
 ## FORMAT
 Markdown
 
 ---
 
-## 08_screen_spec.md 구성
+## 09_screen_spec.md 구성
 
 ```
 # 화면설계서: {project_name}
@@ -50,7 +50,7 @@ Markdown
 
 ---
 
-## 08_proposal_draft.md 구성
+## 09_proposal_draft.md 구성
 
 ```
 # 제안서 초안: {project_name}
@@ -77,5 +77,5 @@ Markdown
 - Figma 링크 없이 와이어프레임 참조
 
 ## VALIDATION RULE
-- 08_screen_spec.md의 화면 목록이 06_screen_flow의 전체 화면 수와 일치하는지 확인
-- 08_proposal_draft.md의 모든 섹션이 작성되었는지 확인
+- 09_screen_spec.md의 화면 목록이 06_screen_flow의 전체 화면 수와 일치하는지 확인
+- 09_proposal_draft.md의 모든 섹션이 작성되었는지 확인
